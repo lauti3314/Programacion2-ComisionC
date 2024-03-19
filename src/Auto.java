@@ -40,5 +40,7 @@ public class Auto extends Vehiculo{
             System.out.println("Descapotable: " +isDescapotable());
         }
 
+        subir();
+        bajar();
     }
 }
