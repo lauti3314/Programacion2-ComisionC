@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Vehiculo auto1 = new Auto("Pedro",4,4,false,false);
+        Vehiculo auto1 = new Auto("Pedro",4,4,true,true);
         auto1.caracteristicas();
 
 

@@ -1,12 +1,12 @@
 
 public class Auto extends Vehiculo{
     private boolean descapotable;
-    private boolean puertasAbiertas;
+    private boolean subirBajar;
 
-    public Auto(String duenio, int ruedas, int puertas, boolean descapotable, boolean puertasAbiertas) {
+    public Auto(String duenio, int ruedas, int puertas, boolean descapotable, boolean subirBajar) {
         super(duenio, ruedas, puertas);
         this.descapotable = descapotable;
-        this.puertasAbiertas= false;
+        this.subirBajar= subirBajar;
     }
 
     public boolean isDescapotable() {
@@ -18,16 +18,14 @@ public class Auto extends Vehiculo{
     }
 
     public void subir() {
-        if (!puertasAbiertas){
-            System.out.println("Subiendo al auto");
-            puertasAbiertas = true;
+        if (subirBajar == true){
+            System.out.println("Subiendo techo");
         }
     }
 
     public void bajar(){
-        if (puertasAbiertas){
-            System.out.println("Bajando del auto");
-            puertasAbiertas=false;
+        if (subirBajar == false){
+            System.out.println("Bajando techo");
         }
     }
 
